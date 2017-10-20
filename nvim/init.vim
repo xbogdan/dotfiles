@@ -9,6 +9,7 @@ set tabstop=4
 set shiftwidth=4
 set softtabstop=4
 set expandtab
+set noswapfile
 
 set noshowmode
 set showcmd
@@ -269,6 +270,8 @@ augroup plugins_au
 augroup END
 
 let g:racer_experimental_completer = 1
+
+autocmd Filetype html setlocal ts=2 sw=2 expandtab
 
 if filereadable(glob('~/.config/nvim/keybindings.vim'))
   source ~/.config/nvim/keybindings.vim
