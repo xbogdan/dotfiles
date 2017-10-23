@@ -272,6 +272,7 @@ augroup END
 let g:racer_experimental_completer = 1
 
 autocmd Filetype html setlocal ts=2 sw=2 expandtab
+autocmd Filetype php setlocal ts=2 sw=2 expandtab
 
 if filereadable(glob('~/.config/nvim/keybindings.vim'))
   source ~/.config/nvim/keybindings.vim
