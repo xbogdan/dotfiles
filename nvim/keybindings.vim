@@ -142,3 +142,6 @@ augroup bindings
   autocmd FileType go call s:go_bindings()
   autocmd FileType rust call s:rust_bindings()
 augroup END
+
+nnoremap <expr> <Leader>ps ':silent !rsync -az `pwd` root@`awk -F= '.shellescape('/remoteaddr/ { print $2 }').' .remotesync.conf`:`awk -F= '.shellescape('/remotepath/ { print $2 }').' .remotesync.conf`/ &<cr>'
+nnoremap <expr> <Leader>pl ':silent !rsync -az root@`awk -F= '.shellescape('/remoteaddr/ { print $2 }').' .remotesync.conf`:`awk -F= '.shellescape('/remotepath/ { print $2 }').' .remotesync.conf`/`pwd \| sed '.shellescape('s:.*/::').'` `pwd \| sed '.shellescape('s:/[^/]*$::').'` &<cr>'
