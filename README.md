@@ -1,7 +1,3 @@
-# My Personal Configuration Files
-
-The installation instructions are coming soon... (WIP)
-
 ## VIM Configuration
 
 * Compatible with [Vim](http://www.vim.org/) and [Neovim](https://neovim.io/).
@@ -54,8 +50,8 @@ The installation instructions are coming soon... (WIP)
 
 * Create necessary directories.
 
-    cd $HOME
-    mkdir .nvimtmp
+        cd $HOME
+        mkdir .nvimtmp
 
 * First run will give errors. Ignore them.
 
@@ -81,6 +77,7 @@ keybindings.
 
         brew install tmux
         brew install reattach-to-user-namespace
+
 - Create a symbolic link to `dotfiles/tmux/tmux.conf`
 
         ln -s /path/to/repo/dotfiles/tmux/tmux.conf ~/.tmux.conf
@@ -129,10 +126,3 @@ keybindings.
 
 - ##### Et voilà!
 
-## ZSH Configuration
-
-## FISH Configuration
-
-## CTAGS
-
-## MACOSX
