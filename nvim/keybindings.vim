@@ -2,8 +2,8 @@ nnoremap <Space> <nop>
 let g:mapleader = "\<Space>"
 let g:maplocalleader = '\'
 
-nnoremap d "_d
-vnoremap d "_d
+" nnoremap d "_d
+" vnoremap d "_d
 
 function! s:python_bindings()
   nnoremap <silent> <leader>md :call jedi#goto()<cr>
@@ -119,7 +119,6 @@ endfunction
 augroup bindings
   autocmd!
   autocmd VimEnter * call s:general_bindings()
-  autocmd FileType haskell,lhaskell call s:haskell_bindings()
   autocmd FileType python,python.django call s:python_bindings()
   autocmd FileType go call s:go_bindings()
   autocmd FileType rust call s:rust_bindings()
