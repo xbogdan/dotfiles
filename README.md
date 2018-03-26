@@ -82,8 +82,8 @@ keybindings.
 
         ln -s /path/to/repo/dotfiles/tmux/tmux.conf ~/.tmux.conf
 
-- ###### (Optional) Change the shell from `fish` to `zsh`
-    - Open `~/.tmux.conf` in your favourite editor and edit the `MYSHELL` and `MYSHELL_PATH` variables in the file which defaults to `fish`
+- ###### (Optional) Change the shell 
+    - Open `~/.tmux.conf` in your favourite editor and edit the `MYSHELL` and `MYSHELL_PATH`.
 
             ...
             3 # SHELL choice (zsh | fish)
@@ -94,8 +94,6 @@ keybindings.
 - Run tmux
 
     `~$ tmux`
-
-- ##### Et voilà!
 
 ### Debian/Ubuntu
 
@@ -123,6 +121,4 @@ keybindings.
     - If you get an error regarding `ambiguous option: mouse` edit your `~/.tmux.conf` and change the `set -g mouse on` to this
 
             # set -g mouse on
-
-- ##### Et voilà!
 
