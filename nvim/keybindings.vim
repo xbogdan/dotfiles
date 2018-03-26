@@ -12,28 +12,6 @@ function! s:python_bindings()
   nnoremap <silent> <leader>mn :call jedi#usages()<cr>
 endfunction
 
-function! s:haskell_bindings()
-  nnoremap <Leader>mio :InteroOpen<CR>
-  nnoremap <Leader>mik :InteroKill<CR>
-  nnoremap <Leader>mic :InteroHide<CR>
-  nnoremap <Leader>mil :InteroLoadCurrentModule<CR>
-
-  nnoremap <Leader>me :InteroEval<CR>
-  nnoremap <Leader>mt :InteroGenericType<CR>
-  nnoremap <Leader>mT :InteroType<CR>
-  nnoremap <Leader>mi :InteroInfo<CR>
-  nnoremap <Leader>mI :InteroTypeInsert<CR>
-
-  nnoremap <Leader>md :InteroGoToDef<CR>
-
-  nnoremap <Leader>mu :InteroUses<CR>
-
-  augroup haskell_intero
-    autocmd!
-    autocmd BufWritePost *.hs InteroReload
-  augroup END
-endfunction
-
 function! s:go_bindings()
   nmap <leader>md <Plug>(go-def)
   nmap <leader>mt <Plug>(go-info)
@@ -57,6 +35,7 @@ function! s:general_bindings()
   nmap <leader>fs <ESC>:w<cr>
   nnoremap <silent> <leader>ff :<c-u>Denite file_rec -winheight=`30*winheight(0)/100`<cr>
   nnoremap <silent> <leader>fj :<c-u>Denite junkfile -winheight=`30*winheight(0)/100`<cr>
+
   " to remove white space from a file.
   nnoremap <leader>fW :%s/\s\+$//<cr>:let @/=''<CR>
 
