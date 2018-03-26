@@ -26,18 +26,21 @@ The installation instructions are coming soon... (WIP)
         brew install vim --with-luajit --with-override-system-vi --HEAD
 
 * For Neovim it is recommended to use separated virtual python environments for
-  editor's own needs (i use Fish shell and virtualfish). For any shell these
-  virtual environments must be located under `~/.virtualenvs/`.
+  editor's own needs. For any shell these virtual environments must be located under `~/.virtualenvs/`.
 
-        vf new neovim2
+        virtualenv neovim2
         pip install neovim
 
-        vf new --python=python3 neovim3
+        virtualenv --python=python3 neovim3
         pip3 install neovim
+
+* Install ruby plugins
+        
+        [sudo] gem install neovim
 
 * Clone repository to any place you prefer.
 
-        git clone https://github.com/zekzekus/dotfiles.git
+        git clone https://github.com/xbogdan/dotfiles 
 
 * Create symbolic links for both editors.
 
@@ -51,13 +54,13 @@ The installation instructions are coming soon... (WIP)
 
 * Create necessary directories.
 
-        cd $HOME
-        mkdir .nvimtmp
+    cd $HOME
+    mkdir .nvimtmp
 
 * First run will give errors. Ignore them.
 
-        $ nvim
-        $ vim
+        nvim
+        vim
 
 * For each editor execute `:PlugInstall` command.
 
