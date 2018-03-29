@@ -12,9 +12,7 @@
 * Leader key is `space`.
 * Local leader is `\`.
 
-### Installation
-
-#### MacOS
+### MacOS
 
 * Install `Neovim` and `Vim` (i prefer HEAD for both).
         
