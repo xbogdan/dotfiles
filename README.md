@@ -19,6 +19,11 @@
         brew install neovim --HEAD
         brew install vim --with-luajit --with-override-system-vi --HEAD
 
+* Install plugin dependencies.
+
+        brew install the_silver_searcher
+        brew install fzf
+
 * For Neovim it is recommended to use separated virtual python environments for
   editor's own needs. For any shell these virtual environments must be located under `~/.virtualenvs/`.
 
