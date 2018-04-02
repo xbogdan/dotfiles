@@ -58,10 +58,40 @@
 
 * For each editor execute `:PlugInstall` command.
 
+### Keybindings List
+
+Notable custom keybindings;
+
+* General
+    * Swap `;` with `:` so to enter command mode use only one keystroke. If you want to repeat latest linewise jump use `:`.
+* File based operations (starts with `<leader>f`)
+    * `<leader>ff` Find files. Fuzzy search UI populated with ripgrep.
+    * `<leader>fj` Find junkfile files. Fuzzy search UI populated with files in junk file folder.
+    * `<leader>ft` Toggle tagbar.
+    * `<leader>fs` Write buffer to disk. Equilavent `:w<cr>`.
+    * `<leader>fW` Remove trailing whitespace from whole buffer.
+* Buffer based operations (starts with `<leader>b`)
+    * `<leader>fl` Populates all lines of current file into fuzzy search UI.
+    * `<leader>fo` Poplulates (on the fly) all tags (outline) in the file (ctags) into fuzzy search UI.
+    * `<leader>bb` List buffer to jump. Fuzzy search UI.
+    * `<leader><tab>` Switch to previous buffer. Equilavent to `:b#<cr>`.
+* Search based operations
+    * `n` mapped to `nzzzv` to keep matching line in the middle of the screen.
+    * `<leader>/` greps recursively in the directory and loads results into fuzzy search UI including preview for each row.
+    * `<leader>*` same as previous one except this does not wait for input. Instead uses the word under cursor as input.
+    * `<leader>ss` uses grepper plugin to grep. Results loaded into quickfix window.
+    * `<BS>` executes `:nohlsearch<cr>`.
+* Other
+    * `<leader>V` selects just pasted text.
+
+Check [keybindings.vim](https://github.com/xbogdan/dotfiles/blob/master/nvim/keybindings.vim) for all custom
+keybindings.
+
 ### Plugins List
 
-Check [plugins.vim](https://github.com/zekzekus/dotfiles/blob/master/nvim/plugins.vim) for all plugins and [keybindings.vim](https://github.com/zekzekus/dotfiles/blob/master/nvim/keybindings.vim) for all custom
+Check [plugins.vim](https://github.com/xbogdan/dotfiles/blob/master/nvim/plugins.vim) for all plugins and [keybindings.vim](https://github.com/zekzekus/dotfiles/blob/master/nvim/keybindings.vim) for all custom
 keybindings.
+
 
 ## TMUX Configuration
 
