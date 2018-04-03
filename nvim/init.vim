@@ -34,7 +34,7 @@ set smartcase
 set showmatch
 set hlsearch
 
-set colorcolumn=79
+set colorcolumn=99
 
 set completeopt=menuone,noinsert,noselect
 
