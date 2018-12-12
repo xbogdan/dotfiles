@@ -30,6 +30,9 @@ function! s:general_bindings()
   nnoremap j gj
   nnoremap k gk
 
+  " search and replace word under cursor in the current line 
+  nnoremap <Leader>s :s/\<<C-r><C-w>\>//g<Left><Left>
+
   " files
   nmap <leader>ft <ESC>:TagbarToggle<cr>
   nmap <leader>fs <ESC>:w<cr>
